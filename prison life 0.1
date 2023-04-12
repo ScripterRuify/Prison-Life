@@ -1,0 +1,859 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local PrisonLifeTitle = Instance.new("TextLabel")
+local x2speed = Instance.new("TextButton")
+local ResetSpeed = Instance.new("TextButton")
+local x2jump = Instance.new("TextButton")
+local ResetJump = Instance.new("TextButton")
+local TPtoCrimBase = Instance.new("TextButton")
+local TPtoTower = Instance.new("TextButton")
+local TptoPrison = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+local Guards = Instance.new("TextButton")
+local Inmates = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local Killaura = Instance.new("TextButton")
+local TPtoArmory = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Refresh = Instance.new("TextButton")
+local p2 = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local Page2 = Instance.new("TextLabel")
+local Return = Instance.new("TextButton")
+local Remington870 = Instance.new("TextButton")
+local AK47 = Instance.new("TextButton")
+local m9 = Instance.new("TextButton")
+local AllWeaponGetter = Instance.new("TextButton")
+
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(147, 167, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.102259703, 0, 0.0405904092, 0)
+Frame.Size = UDim2.new(0, 369, 0, 261)
+
+PrisonLifeTitle.Name = "Prison Life Title"
+PrisonLifeTitle.Parent = Frame
+PrisonLifeTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLifeTitle.BackgroundTransparency = 1.000
+PrisonLifeTitle.Size = UDim2.new(0, 74, 0, 50)
+PrisonLifeTitle.Font = Enum.Font.GothamBold
+PrisonLifeTitle.Text = "Prison Life 0.1"
+PrisonLifeTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrisonLifeTitle.TextScaled = true
+PrisonLifeTitle.TextSize = 14.000
+PrisonLifeTitle.TextWrapped = true
+
+x2speed.Name = "x2 speed"
+x2speed.Parent = Frame
+x2speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+x2speed.BackgroundTransparency = 1.000
+x2speed.Position = UDim2.new(0, 0, 0.270758152, 0)
+x2speed.Size = UDim2.new(0, 105, 0, 51)
+x2speed.Font = Enum.Font.GothamBold
+x2speed.Text = "X2 Speed"
+x2speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+x2speed.TextScaled = true
+x2speed.TextSize = 14.000
+x2speed.TextWrapped = true
+
+ResetSpeed.Name = "Reset Speed"
+ResetSpeed.Parent = Frame
+ResetSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetSpeed.BackgroundTransparency = 1.000
+ResetSpeed.Position = UDim2.new(0.282366365, 0, 0.278420985, 0)
+ResetSpeed.Size = UDim2.new(0, 105, 0, 51)
+ResetSpeed.Font = Enum.Font.GothamBold
+ResetSpeed.Text = "Reset Speed"
+ResetSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetSpeed.TextScaled = true
+ResetSpeed.TextSize = 14.000
+ResetSpeed.TextWrapped = true
+
+x2jump.Name = "x2 jump"
+x2jump.Parent = Frame
+x2jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+x2jump.BackgroundTransparency = 1.000
+x2jump.Position = UDim2.new(0, 0, 0.480144411, 0)
+x2jump.Size = UDim2.new(0, 105, 0, 51)
+x2jump.Font = Enum.Font.GothamBold
+x2jump.Text = "X2 Jump"
+x2jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+x2jump.TextScaled = true
+x2jump.TextSize = 14.000
+x2jump.TextWrapped = true
+
+ResetJump.Name = "Reset Jump"
+ResetJump.Parent = Frame
+ResetJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetJump.BackgroundTransparency = 1.000
+ResetJump.Position = UDim2.new(0.282366365, 0, 0.49163872, 0)
+ResetJump.Size = UDim2.new(0, 105, 0, 51)
+ResetJump.Font = Enum.Font.GothamBold
+ResetJump.Text = "Reset Jump"
+ResetJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetJump.TextScaled = true
+ResetJump.TextSize = 14.000
+ResetJump.TextWrapped = true
+
+TPtoCrimBase.Name = "TP to Crim Base"
+TPtoCrimBase.Parent = Frame
+TPtoCrimBase.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPtoCrimBase.BackgroundTransparency = 1.000
+TPtoCrimBase.Position = UDim2.new(0.566970766, 0, 0.296028882, 0)
+TPtoCrimBase.Size = UDim2.new(0, 77, 0, 44)
+TPtoCrimBase.Font = Enum.Font.GothamBold
+TPtoCrimBase.Text = "Tp to Crim Base"
+TPtoCrimBase.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPtoCrimBase.TextScaled = true
+TPtoCrimBase.TextSize = 14.000
+TPtoCrimBase.TextWrapped = true
+
+TPtoTower.Name = "TP to Tower"
+TPtoTower.Parent = Frame
+TPtoTower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPtoTower.BackgroundTransparency = 1.000
+TPtoTower.Position = UDim2.new(0.566970766, 0, 0.501583695, 0)
+TPtoTower.Size = UDim2.new(0, 77, 0, 44)
+TPtoTower.Font = Enum.Font.GothamBold
+TPtoTower.Text = "Tp to Tower"
+TPtoTower.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPtoTower.TextScaled = true
+TPtoTower.TextSize = 14.000
+TPtoTower.TextWrapped = true
+
+TptoPrison.Name = "Tp to Prison"
+TptoPrison.Parent = Frame
+TptoPrison.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TptoPrison.BackgroundTransparency = 1.000
+TptoPrison.Position = UDim2.new(0.777641475, 0, 0.51690942, 0)
+TptoPrison.Size = UDim2.new(0, 77, 0, 44)
+TptoPrison.Font = Enum.Font.GothamBold
+TptoPrison.Text = "Tp to Prison"
+TptoPrison.TextColor3 = Color3.fromRGB(0, 0, 0)
+TptoPrison.TextScaled = true
+TptoPrison.TextSize = 14.000
+TptoPrison.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = Frame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 1.000
+Exit.Position = UDim2.new(0.875362337, 0, 0.0216606501, 0)
+Exit.Size = UDim2.new(0, 43, 0, 44)
+Exit.Font = Enum.Font.GothamBold
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+Guards.Name = "Guards"
+Guards.Parent = Frame
+Guards.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Guards.BackgroundTransparency = 1.000
+Guards.Position = UDim2.new(0.539295435, 0, 0.103448279, 0)
+Guards.Size = UDim2.new(0, 87, 0, 22)
+Guards.Font = Enum.Font.GothamBold
+Guards.Text = "Gaurd"
+Guards.TextColor3 = Color3.fromRGB(0, 0, 0)
+Guards.TextScaled = true
+Guards.TextSize = 14.000
+Guards.TextWrapped = true
+
+Inmates.Name = "Inmates"
+Inmates.Parent = Frame
+Inmates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Inmates.BackgroundTransparency = 1.000
+Inmates.Position = UDim2.new(0.54200542, 0, 0, 0)
+Inmates.Size = UDim2.new(0, 87, 0, 22)
+Inmates.Font = Enum.Font.GothamBold
+Inmates.Text = "Inmate"
+Inmates.TextColor3 = Color3.fromRGB(0, 0, 0)
+Inmates.TextScaled = true
+Inmates.TextSize = 14.000
+Inmates.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.235772356, 0, -0.00383141637, 0)
+Credits.Size = UDim2.new(0, 87, 0, 50)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Made by Ruify#1578"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Killaura.Name = "Killaura"
+Killaura.Parent = Frame
+Killaura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Killaura.BackgroundTransparency = 1.000
+Killaura.Position = UDim2.new(0.0378041267, 0, 0.750625908, 0)
+Killaura.Size = UDim2.new(0, 90, 0, 44)
+Killaura.Font = Enum.Font.GothamBold
+Killaura.Text = "KillAura"
+Killaura.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killaura.TextScaled = true
+Killaura.TextSize = 14.000
+Killaura.TextWrapped = true
+
+TPtoArmory.Name = "TP to Armory"
+TPtoArmory.Parent = Frame
+TPtoArmory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPtoArmory.BackgroundTransparency = 1.000
+TPtoArmory.Position = UDim2.new(0.791191638, 0, 0.329169959, 0)
+TPtoArmory.Size = UDim2.new(0, 77, 0, 44)
+TPtoArmory.Font = Enum.Font.GothamBold
+TPtoArmory.Text = "Tp to Armory"
+TPtoArmory.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPtoArmory.TextScaled = true
+TPtoArmory.TextSize = 14.000
+TPtoArmory.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Frame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.BackgroundTransparency = 1.000
+Noclip.Position = UDim2.new(0.357587308, 0, 0.781277299, 0)
+Noclip.Size = UDim2.new(0, 104, 0, 39)
+Noclip.Font = Enum.Font.GothamBold
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+Refresh.Name = "Refresh"
+Refresh.Parent = Frame
+Refresh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Refresh.BackgroundTransparency = 1.000
+Refresh.Position = UDim2.new(0.666530371, 0, 0.781277239, 0)
+Refresh.Size = UDim2.new(0, 77, 0, 43)
+Refresh.Font = Enum.Font.GothamBold
+Refresh.Text = "Refresh"
+Refresh.TextColor3 = Color3.fromRGB(0, 0, 0)
+Refresh.TextScaled = true
+Refresh.TextSize = 14.000
+Refresh.TextWrapped = true
+
+p2.Name = "p2"
+p2.Parent = Frame
+p2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+p2.BackgroundTransparency = 1.000
+p2.Position = UDim2.new(0.875338733, 0, 0.846743286, 0)
+p2.Size = UDim2.new(0, 48, 0, 40)
+p2.Font = Enum.Font.SourceSans
+p2.Text = "p2"
+p2.TextColor3 = Color3.fromRGB(0, 0, 0)
+p2.TextScaled = true
+p2.TextSize = 14.000
+p2.TextWrapped = true
+
+Frame2.Name = "Frame2"
+Frame2.Parent = ScreenGui
+Frame2.BackgroundColor3 = Color3.fromRGB(147, 167, 255)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0.100271001, 0, 0.0405904055, 0)
+Frame2.Size = UDim2.new(0, 372, 0, 261)
+Frame2.Visible = false
+
+Page2.Name = "Page 2"
+Page2.Parent = Frame2
+Page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page2.BackgroundTransparency = 1.000
+Page2.Position = UDim2.new(0.00268818438, 0, 0, 0)
+Page2.Size = UDim2.new(0, 200, 0, 50)
+Page2.Font = Enum.Font.GothamBold
+Page2.Text = "Page 2"
+Page2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Page2.TextScaled = true
+Page2.TextSize = 14.000
+Page2.TextWrapped = true
+
+Return.Name = "Return"
+Return.Parent = Frame2
+Return.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Return.BackgroundTransparency = 1.000
+Return.BorderSizePixel = 0
+Return.Position = UDim2.new(0.612903237, 0, 0, 0)
+Return.Size = UDim2.new(0, 147, 0, 49)
+Return.Font = Enum.Font.GothamBold
+Return.Text = "Back"
+Return.TextColor3 = Color3.fromRGB(0, 0, 0)
+Return.TextScaled = true
+Return.TextSize = 14.000
+Return.TextWrapped = true
+
+Remington870.Name = "Remington 870"
+Remington870.Parent = Frame2
+Remington870.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Remington870.BackgroundTransparency = 1.000
+Remington870.Position = UDim2.new(0.0420054384, 0, 0.268199235, 0)
+Remington870.Size = UDim2.new(0, 102, 0, 44)
+Remington870.Font = Enum.Font.GothamBold
+Remington870.Text = "Remington 870"
+Remington870.TextColor3 = Color3.fromRGB(0, 0, 0)
+Remington870.TextScaled = true
+Remington870.TextSize = 14.000
+Remington870.TextWrapped = true
+
+AK47.Name = "AK-47"
+AK47.Parent = Frame2
+AK47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AK47.BackgroundTransparency = 1.000
+AK47.Position = UDim2.new(0.0420054384, 0, 0.517241359, 0)
+AK47.Size = UDim2.new(0, 102, 0, 44)
+AK47.Font = Enum.Font.GothamBold
+AK47.Text = "AK-47"
+AK47.TextColor3 = Color3.fromRGB(0, 0, 0)
+AK47.TextScaled = true
+AK47.TextSize = 14.000
+AK47.TextWrapped = true
+
+m9.Name = "m9"
+m9.Parent = Frame2
+m9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+m9.BackgroundTransparency = 1.000
+m9.Position = UDim2.new(0.0420054384, 0, 0.777777791, 0)
+m9.Size = UDim2.new(0, 102, 0, 44)
+m9.Font = Enum.Font.GothamBold
+m9.Text = "m9"
+m9.TextColor3 = Color3.fromRGB(0, 0, 0)
+m9.TextScaled = true
+m9.TextSize = 14.000
+m9.TextWrapped = true
+
+AllWeaponGetter.Name = "AllWeaponGetter"
+AllWeaponGetter.Parent = Frame2
+AllWeaponGetter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AllWeaponGetter.BackgroundTransparency = 1.000
+AllWeaponGetter.Position = UDim2.new(0.359209806, 0, 0.528735638, 0)
+AllWeaponGetter.Size = UDim2.new(0, 53, 0, 41)
+AllWeaponGetter.Font = Enum.Font.GothamBold
+AllWeaponGetter.Text = "Get All"
+AllWeaponGetter.TextColor3 = Color3.fromRGB(0, 0, 0)
+AllWeaponGetter.TextScaled = true
+AllWeaponGetter.TextSize = 14.000
+AllWeaponGetter.TextWrapped = true
+
+-- Scripts:
+
+local function JIZUHTP_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if input.KeyCode == Enum.KeyCode.E then
+			script.Parent.Enabled = not script.Parent.Enabled
+		end
+	end)
+end
+coroutine.wrap(JIZUHTP_fake_script)()
+local function NOCH_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(NOCH_fake_script)()
+local function YQEDW_fake_script() -- x2speed.LocalScript 
+	local script = Instance.new('LocalScript', x2speed)
+
+	local textButton = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Ran")
+		local player = game.Players.LocalPlayer
+	
+		local character = player.Character
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		humanoid.WalkSpeed = humanoid.WalkSpeed * 2
+	end)
+end
+coroutine.wrap(YQEDW_fake_script)()
+local function MGITN_fake_script() -- ResetSpeed.LocalScript 
+	local script = Instance.new('LocalScript', ResetSpeed)
+
+	local textButton = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Ran")
+		local player = game.Players.LocalPlayer
+	
+		local character = player.Character
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		humanoid.WalkSpeed = 16
+	end)
+end
+coroutine.wrap(MGITN_fake_script)()
+local function TVYYFRQ_fake_script() -- x2jump.LocalScript 
+	local script = Instance.new('LocalScript', x2jump)
+
+	local textButton = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Ran")
+		local player = game.Players.LocalPlayer
+	
+		local character = player.Character
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		humanoid.JumpPower = humanoid.JumpPower * 2
+	end)
+end
+coroutine.wrap(TVYYFRQ_fake_script)()
+local function UFPIB_fake_script() -- ResetJump.LocalScript 
+	local script = Instance.new('LocalScript', ResetJump)
+
+	local textButton = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Ran")
+		local player = game.Players.LocalPlayer
+	
+		local character = player.Character
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		humanoid.JumpPower = 50
+	end)
+end
+coroutine.wrap(UFPIB_fake_script)()
+local function UVNJWBY_fake_script() -- TPtoCrimBase.LocalScript 
+	local script = Instance.new('LocalScript', TPtoCrimBase)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+		rootPart.CFrame = CFrame.new(-976, 109, 2054)
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(UVNJWBY_fake_script)()
+local function CLSQ_fake_script() -- TPtoTower.LocalScript 
+	local script = Instance.new('LocalScript', TPtoTower)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+		rootPart.CFrame = CFrame.new(822, 130, 2588)
+	end)
+	
+end
+coroutine.wrap(CLSQ_fake_script)()
+local function KVBY_fake_script() -- TptoPrison.LocalScript 
+	local script = Instance.new('LocalScript', TptoPrison)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+		rootPart.CFrame = CFrame.new(983, 100, 2312)
+	end)
+	
+	
+	
+end
+coroutine.wrap(KVBY_fake_script)()
+local function DKXKP_fake_script() -- Exit.Script 
+	local script = Instance.new('Script', Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(DKXKP_fake_script)()
+local function HISLJZQ_fake_script() -- Guards.LocalScript 
+	local script = Instance.new('LocalScript', Guards)
+
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Bright blue"
+		}
+	
+		workspace.Remote.TeamEvent:FireServer(unpack(args))
+	end)
+	
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(HISLJZQ_fake_script)()
+local function GNTM_fake_script() -- Inmates.LocalScript 
+	local script = Instance.new('LocalScript', Inmates)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Script generated by SimpleSpy - credits to exx#9394
+	
+		local args = {
+			[1] = "Bright orange"
+		}
+	
+		workspace.Remote.TeamEvent:FireServer(unpack(args))
+	
+	end)
+	
+	
+end
+coroutine.wrap(GNTM_fake_script)()
+local function LTVAAUX_fake_script() -- Killaura.LocalScript 
+	local script = Instance.new('LocalScript', Killaura)
+
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		on = not on -- toggle the value of on
+		if on then
+			local plr = game.Players.LocalPlayer
+			local plrs = game:GetService("Players")
+	
+			while wait(0) do
+				if not on then break end -- stop the loop if the script is turned off
+				for i, v in pairs(plrs:GetChildren()) do
+					if v.UserId == plr.UserId then
+						print("You got me.")
+					else
+						game:GetService("ReplicatedStorage").meleeEvent:FireServer(v)
+					end
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LTVAAUX_fake_script)()
+local function GNOLX_fake_script() -- TPtoArmory.LocalScript 
+	local script = Instance.new('LocalScript', TPtoArmory)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+		rootPart.CFrame = CFrame.new(838, 100, 2305)
+	end)
+	
+	
+	
+end
+coroutine.wrap(GNOLX_fake_script)()
+local function OJTAXV_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local Noclip = nil
+	local Clip = true
+	
+	function noclip()
+		Clip = false
+		local function Nocl()
+			if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+				for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+					if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
+						v.CanCollide = false
+					end
+				end
+			end
+			wait(0.21) -- basic optimization
+		end
+		Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+	end
+	
+	function clip()
+		if Noclip then Noclip:Disconnect() end
+		Clip = true
+		for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+			if v:IsA('BasePart') and not v.CanCollide and v.Name ~= floatName then
+				v.CanCollide = true
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Clip then
+			noclip()
+		else
+			clip()
+		end
+	end)
+end
+coroutine.wrap(OJTAXV_fake_script)()
+local function HAJOR_fake_script() -- Refresh.LocalScript 
+	local script = Instance.new('LocalScript', Refresh)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local function onButtonClick()
+		local player = Players.LocalPlayer
+		local character = player.Character
+	
+		if character then
+			character:Destroy()
+		end
+	
+		local humanoid = player.CharacterAdded:Wait():WaitForChild("Humanoid")
+		local rootPart = humanoid.RootPart
+	
+		local camera = workspace.CurrentCamera
+	
+		rootPart.CFrame = camera.CFrame + camera.CFrame.LookVector * 5 -- spawn player in front of the camera
+	
+		local startTime = tick()
+		local elapsed = 0
+		while elapsed < 0.5 do
+			RunService.Heartbeat:Wait()
+			elapsed = tick() - startTime
+		end
+	
+		rootPart.CFrame = camera.CFrame -- teleport player to camera position
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(HAJOR_fake_script)()
+local function IZZVDO_fake_script() -- p2.Script 
+	local script = Instance.new('Script', p2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame2.Visible = true
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame.Visible = false
+		print("button worked")
+		end)
+	
+end
+coroutine.wrap(IZZVDO_fake_script)()
+local function TJZC_fake_script() -- Return.Script 
+	local script = Instance.new('Script', Return)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame2.Visible = false
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame.Visible = true
+		print("button worked")
+	end)
+	
+end
+coroutine.wrap(TJZC_fake_script)()
+local function ZTFSJPT_fake_script() -- Remington870.LocalScript 
+	local script = Instance.new('LocalScript', Remington870)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local model = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Teleport player to model
+		character.HumanoidRootPart.CFrame = model.CFrame
+	
+		-- Script generated by SimpleSpy - credits to exx#9394
+		wait(0.5)
+		local args = {
+			[1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
+		}
+	
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end
+coroutine.wrap(ZTFSJPT_fake_script)()
+local function FRDKX_fake_script() -- AK47.LocalScript 
+	local script = Instance.new('LocalScript', AK47)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local model = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Teleport player to model
+		character.HumanoidRootPart.CFrame = model.CFrame
+	
+		wait(0.3)
+		local args = {
+			[1] = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+		}
+	
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end
+coroutine.wrap(FRDKX_fake_script)()
+local function BRRVDC_fake_script() -- m9.LocalScript 
+	local script = Instance.new('LocalScript', m9)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local model = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Teleport player to model
+		character.HumanoidRootPart.CFrame = model.CFrame
+	
+		wait(0.3)
+		local args = {
+			[1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+		}
+	
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end
+coroutine.wrap(BRRVDC_fake_script)()
+local function YNDCPXR_fake_script() -- AllWeaponGetter.LocalScript 
+	local script = Instance.new('LocalScript', AllWeaponGetter)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local giver = workspace.Prison_ITEMS.giver
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Pick up M9
+		local model = giver.M9.ITEMPICKUP
+		character.HumanoidRootPart.CFrame = model.CFrame
+		wait(0.3)
+		local args = {
+			[1] = giver.M9.ITEMPICKUP
+		}
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Pick up AK-47
+		model = giver:FindFirstChild("AK-47").ITEMPICKUP
+		character.HumanoidRootPart.CFrame = model.CFrame
+		wait(0.3)
+		args = {
+			[1] = giver:FindFirstChild("AK-47").ITEMPICKUP
+		}
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Pick up Remington 870
+		model = giver:FindFirstChild("Remington 870").ITEMPICKUP
+		character.HumanoidRootPart.CFrame = model.CFrame
+		wait(0.3)
+		args = {
+			[1] = giver:FindFirstChild("Remington 870").ITEMPICKUP
+		}
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end
+coroutine.wrap(YNDCPXR_fake_script)()
+local function TGLBL_fake_script() -- Frame2.Dragify 
+	local script = Instance.new('LocalScript', Frame2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(TGLBL_fake_script)()
