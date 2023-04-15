@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version:
+-- Revamped by Typical_RBLX 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -25,6 +30,9 @@ local Remington870 = Instance.new("TextButton")
 local AK47 = Instance.new("TextButton")
 local m9 = Instance.new("TextButton")
 local AllWeaponGetter = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local _10FOV = Instance.new("TextButton")
+local ResetFov = Instance.new("TextButton")
 
 
 --Properties:
@@ -44,7 +52,7 @@ PrisonLifeTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PrisonLifeTitle.BackgroundTransparency = 1.000
 PrisonLifeTitle.Size = UDim2.new(0, 74, 0, 50)
 PrisonLifeTitle.Font = Enum.Font.GothamBold
-PrisonLifeTitle.Text = "Prison Life 0.1"
+PrisonLifeTitle.Text = "Prison Life 0.2"
 PrisonLifeTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
 PrisonLifeTitle.TextScaled = true
 PrisonLifeTitle.TextSize = 14.000
@@ -262,7 +270,7 @@ Frame2.Name = "Frame2"
 Frame2.Parent = ScreenGui
 Frame2.BackgroundColor3 = Color3.fromRGB(147, 167, 255)
 Frame2.BorderSizePixel = 0
-Frame2.Position = UDim2.new(0.100271001, 0, 0.0405904055, 0)
+Frame2.Position = UDim2.new(0.106806949, 0, 0.154981554, 0)
 Frame2.Size = UDim2.new(0, 372, 0, 261)
 Frame2.Visible = false
 
@@ -345,9 +353,48 @@ AllWeaponGetter.TextScaled = true
 AllWeaponGetter.TextSize = 14.000
 AllWeaponGetter.TextWrapped = true
 
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Frame2
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.BackgroundTransparency = 1.000
+Aimbot.Position = UDim2.new(0.703295767, 0, 0.268199265, 0)
+Aimbot.Size = UDim2.new(0, 102, 0, 44)
+Aimbot.Font = Enum.Font.GothamBold
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+
+_10FOV.Name = "+10 FOV"
+_10FOV.Parent = Frame2
+_10FOV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_10FOV.BackgroundTransparency = 1.000
+_10FOV.Position = UDim2.new(0.703295708, 0, 0.513409972, 0)
+_10FOV.Size = UDim2.new(0, 56, 0, 37)
+_10FOV.Font = Enum.Font.GothamBold
+_10FOV.Text = "+10 fov"
+_10FOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10FOV.TextScaled = true
+_10FOV.TextSize = 14.000
+_10FOV.TextWrapped = true
+
+ResetFov.Name = "Reset Fov"
+ResetFov.Parent = Frame2
+ResetFov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetFov.BackgroundTransparency = 1.000
+ResetFov.Position = UDim2.new(0.856521487, 0, 0.513409972, 0)
+ResetFov.Size = UDim2.new(0, 56, 0, 37)
+ResetFov.Font = Enum.Font.GothamBold
+ResetFov.Text = "Reset Fov"
+ResetFov.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetFov.TextScaled = true
+ResetFov.TextSize = 14.000
+ResetFov.TextWrapped = true
+
 -- Scripts:
 
-local function JIZUHTP_fake_script() -- ScreenGui.LocalScript 
+local function NRMBC_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -358,8 +405,8 @@ local function JIZUHTP_fake_script() -- ScreenGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JIZUHTP_fake_script)()
-local function NOCH_fake_script() -- Frame.Dragify 
+coroutine.wrap(NRMBC_fake_script)()
+local function KDUYE_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -402,8 +449,8 @@ local function NOCH_fake_script() -- Frame.Dragify
 		end
 	end)
 end
-coroutine.wrap(NOCH_fake_script)()
-local function YQEDW_fake_script() -- x2speed.LocalScript 
+coroutine.wrap(KDUYE_fake_script)()
+local function HGTMGFH_fake_script() -- x2speed.LocalScript 
 	local script = Instance.new('LocalScript', x2speed)
 
 	local textButton = script.Parent
@@ -418,8 +465,8 @@ local function YQEDW_fake_script() -- x2speed.LocalScript
 		humanoid.WalkSpeed = humanoid.WalkSpeed * 2
 	end)
 end
-coroutine.wrap(YQEDW_fake_script)()
-local function MGITN_fake_script() -- ResetSpeed.LocalScript 
+coroutine.wrap(HGTMGFH_fake_script)()
+local function KRZO_fake_script() -- ResetSpeed.LocalScript 
 	local script = Instance.new('LocalScript', ResetSpeed)
 
 	local textButton = script.Parent
@@ -434,8 +481,8 @@ local function MGITN_fake_script() -- ResetSpeed.LocalScript
 		humanoid.WalkSpeed = 16
 	end)
 end
-coroutine.wrap(MGITN_fake_script)()
-local function TVYYFRQ_fake_script() -- x2jump.LocalScript 
+coroutine.wrap(KRZO_fake_script)()
+local function XFTZPK_fake_script() -- x2jump.LocalScript 
 	local script = Instance.new('LocalScript', x2jump)
 
 	local textButton = script.Parent
@@ -450,8 +497,8 @@ local function TVYYFRQ_fake_script() -- x2jump.LocalScript
 		humanoid.JumpPower = humanoid.JumpPower * 2
 	end)
 end
-coroutine.wrap(TVYYFRQ_fake_script)()
-local function UFPIB_fake_script() -- ResetJump.LocalScript 
+coroutine.wrap(XFTZPK_fake_script)()
+local function YPEL_fake_script() -- ResetJump.LocalScript 
 	local script = Instance.new('LocalScript', ResetJump)
 
 	local textButton = script.Parent
@@ -466,8 +513,8 @@ local function UFPIB_fake_script() -- ResetJump.LocalScript
 		humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(UFPIB_fake_script)()
-local function UVNJWBY_fake_script() -- TPtoCrimBase.LocalScript 
+coroutine.wrap(YPEL_fake_script)()
+local function VXOBY_fake_script() -- TPtoCrimBase.LocalScript 
 	local script = Instance.new('LocalScript', TPtoCrimBase)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -480,8 +527,8 @@ local function UVNJWBY_fake_script() -- TPtoCrimBase.LocalScript
 	
 	
 end
-coroutine.wrap(UVNJWBY_fake_script)()
-local function CLSQ_fake_script() -- TPtoTower.LocalScript 
+coroutine.wrap(VXOBY_fake_script)()
+local function FDLF_fake_script() -- TPtoTower.LocalScript 
 	local script = Instance.new('LocalScript', TPtoTower)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -490,8 +537,8 @@ local function CLSQ_fake_script() -- TPtoTower.LocalScript
 	end)
 	
 end
-coroutine.wrap(CLSQ_fake_script)()
-local function KVBY_fake_script() -- TptoPrison.LocalScript 
+coroutine.wrap(FDLF_fake_script)()
+local function TEDACQE_fake_script() -- TptoPrison.LocalScript 
 	local script = Instance.new('LocalScript', TptoPrison)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -502,16 +549,16 @@ local function KVBY_fake_script() -- TptoPrison.LocalScript
 	
 	
 end
-coroutine.wrap(KVBY_fake_script)()
-local function DKXKP_fake_script() -- Exit.Script 
+coroutine.wrap(TEDACQE_fake_script)()
+local function ELWPSM_fake_script() -- Exit.Script 
 	local script = Instance.new('Script', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(DKXKP_fake_script)()
-local function HISLJZQ_fake_script() -- Guards.LocalScript 
+coroutine.wrap(ELWPSM_fake_script)()
+local function UGKQS_fake_script() -- Guards.LocalScript 
 	local script = Instance.new('LocalScript', Guards)
 
 	
@@ -533,8 +580,8 @@ local function HISLJZQ_fake_script() -- Guards.LocalScript
 	
 	
 end
-coroutine.wrap(HISLJZQ_fake_script)()
-local function GNTM_fake_script() -- Inmates.LocalScript 
+coroutine.wrap(UGKQS_fake_script)()
+local function VKZJY_fake_script() -- Inmates.LocalScript 
 	local script = Instance.new('LocalScript', Inmates)
 
 	
@@ -551,8 +598,8 @@ local function GNTM_fake_script() -- Inmates.LocalScript
 	
 	
 end
-coroutine.wrap(GNTM_fake_script)()
-local function LTVAAUX_fake_script() -- Killaura.LocalScript 
+coroutine.wrap(VKZJY_fake_script)()
+local function ARERDX_fake_script() -- Killaura.LocalScript 
 	local script = Instance.new('LocalScript', Killaura)
 
 	local on = false
@@ -577,8 +624,8 @@ local function LTVAAUX_fake_script() -- Killaura.LocalScript
 	end)
 	
 end
-coroutine.wrap(LTVAAUX_fake_script)()
-local function GNOLX_fake_script() -- TPtoArmory.LocalScript 
+coroutine.wrap(ARERDX_fake_script)()
+local function LWPHNU_fake_script() -- TPtoArmory.LocalScript 
 	local script = Instance.new('LocalScript', TPtoArmory)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -589,8 +636,8 @@ local function GNOLX_fake_script() -- TPtoArmory.LocalScript
 	
 	
 end
-coroutine.wrap(GNOLX_fake_script)()
-local function OJTAXV_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(LWPHNU_fake_script)()
+local function QSWCTKP_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local Noclip = nil
@@ -629,8 +676,8 @@ local function OJTAXV_fake_script() -- Noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OJTAXV_fake_script)()
-local function HAJOR_fake_script() -- Refresh.LocalScript 
+coroutine.wrap(QSWCTKP_fake_script)()
+local function NEOOI_fake_script() -- Refresh.LocalScript 
 	local script = Instance.new('LocalScript', Refresh)
 
 	local Players = game:GetService("Players")
@@ -664,8 +711,8 @@ local function HAJOR_fake_script() -- Refresh.LocalScript
 	script.Parent.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(HAJOR_fake_script)()
-local function IZZVDO_fake_script() -- p2.Script 
+coroutine.wrap(NEOOI_fake_script)()
+local function UFPVU_fake_script() -- p2.Script 
 	local script = Instance.new('Script', p2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -675,8 +722,8 @@ local function IZZVDO_fake_script() -- p2.Script
 		end)
 	
 end
-coroutine.wrap(IZZVDO_fake_script)()
-local function TJZC_fake_script() -- Return.Script 
+coroutine.wrap(UFPVU_fake_script)()
+local function FUARG_fake_script() -- Return.Script 
 	local script = Instance.new('Script', Return)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -686,8 +733,8 @@ local function TJZC_fake_script() -- Return.Script
 	end)
 	
 end
-coroutine.wrap(TJZC_fake_script)()
-local function ZTFSJPT_fake_script() -- Remington870.LocalScript 
+coroutine.wrap(FUARG_fake_script)()
+local function HSURW_fake_script() -- Remington870.LocalScript 
 	local script = Instance.new('LocalScript', Remington870)
 
 	
@@ -714,8 +761,8 @@ local function ZTFSJPT_fake_script() -- Remington870.LocalScript
 	
 	
 end
-coroutine.wrap(ZTFSJPT_fake_script)()
-local function FRDKX_fake_script() -- AK47.LocalScript 
+coroutine.wrap(HSURW_fake_script)()
+local function NVMNEY_fake_script() -- AK47.LocalScript 
 	local script = Instance.new('LocalScript', AK47)
 
 	
@@ -741,8 +788,8 @@ local function FRDKX_fake_script() -- AK47.LocalScript
 	
 	
 end
-coroutine.wrap(FRDKX_fake_script)()
-local function BRRVDC_fake_script() -- m9.LocalScript 
+coroutine.wrap(NVMNEY_fake_script)()
+local function YSEIUFH_fake_script() -- m9.LocalScript 
 	local script = Instance.new('LocalScript', m9)
 
 	
@@ -768,8 +815,8 @@ local function BRRVDC_fake_script() -- m9.LocalScript
 	
 	
 end
-coroutine.wrap(BRRVDC_fake_script)()
-local function YNDCPXR_fake_script() -- AllWeaponGetter.LocalScript 
+coroutine.wrap(YSEIUFH_fake_script)()
+local function NVTRMQN_fake_script() -- AllWeaponGetter.LocalScript 
 	local script = Instance.new('LocalScript', AllWeaponGetter)
 
 	
@@ -812,8 +859,8 @@ local function YNDCPXR_fake_script() -- AllWeaponGetter.LocalScript
 	
 	
 end
-coroutine.wrap(YNDCPXR_fake_script)()
-local function TGLBL_fake_script() -- Frame2.Dragify 
+coroutine.wrap(NVTRMQN_fake_script)()
+local function AORZ_fake_script() -- Frame2.Dragify 
 	local script = Instance.new('LocalScript', Frame2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -856,4 +903,102 @@ local function TGLBL_fake_script() -- Frame2.Dragify
 		end
 	end)
 end
-coroutine.wrap(TGLBL_fake_script)()
+coroutine.wrap(AORZ_fake_script)()
+local function ULIRLLG_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
+
+	local UserInputService = game:GetService("UserInputService")
+	local aimassist = false -- Initialize aim assist to be off
+	local aimassistRange = 22 -- Set the range at which aim assist will lock on to a player
+	
+	-- Function to toggle aim assist on and off
+	local function toggleAimAssist()
+		aimassist = not aimassist -- Toggle aim assist on and off
+	
+		if aimassist then
+			-- Code to run when aim assist is turned on
+			print("Aim assist turned on")
+		else
+			-- Code to run when aim assist is turned off
+			print("Aim assist turned off")
+		end
+	end
+	
+	-- Connect the button click event to the toggle function
+	script.Parent.MouseButton1Click:Connect(toggleAimAssist)
+	
+	-- Connect the keybind event to the toggle function
+	UserInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.X then
+			toggleAimAssist()
+		end
+	end)
+	
+	teambased = true
+	aim = 1
+	lock = 0
+	
+	e = Instance.new("SelectionBox")
+	e.Color3 = Color3.new(1, 0, 0)
+	e.Parent = game.Workspace
+	mouse = game.Players.LocalPlayer:GetMouse()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if lock == 0 then
+			if (aimassistRange - (mouse.Hit.Position - game.Workspace.CurrentCamera.CFrame.Position).Magnitude / 5) > aimassistRange - 6 then
+			else 
+			end
+		end
+	
+		if mouse.Target.Parent:FindFirstChild("Humanoid") then
+			if game.Players:FindFirstChild(mouse.Target.Parent.Name) then
+				if game.Players:FindFirstChild(mouse.Target.Parent.Name).TeamColor == game.Players.LocalPlayer.TeamColor then
+					if teambased == false then
+						e.Adornee = mouse.Target
+						if aimassist == true then
+							lock = 1
+	
+							game.Workspace.CurrentCamera.CFrame = game.Workspace.CurrentCamera.CFrame:Lerp(CFrame.new(game.Workspace.CurrentCamera.CFrame.Position, mouse.Target.Parent:FindFirstChild("Head").Position), 0.94)
+						end
+					end
+				else
+					e.Adornee = mouse.Target
+					if aimassist == true then
+						lock = 1
+	
+						game.Workspace.CurrentCamera.CFrame = game.Workspace.CurrentCamera.CFrame:Lerp(CFrame.new(game.Workspace.CurrentCamera.CFrame.Position, mouse.Target.Parent:FindFirstChild("Head").Position), 0.94)
+					end
+				end
+			end
+		else 
+			lock = 0
+			e.Adornee = nil
+			e.Adornee = nil
+		end
+	end)
+	
+end
+coroutine.wrap(ULIRLLG_fake_script)()
+local function RHYKBT_fake_script() -- _10FOV.LocalScript 
+	local script = Instance.new('LocalScript', _10FOV)
+
+	local camera = game.Workspace.CurrentCamera
+	local maxFov = 120 -- Set the maximum FOV value
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		camera.FieldOfView = math.min(camera.FieldOfView + 10, maxFov)
+	end)
+end
+coroutine.wrap(RHYKBT_fake_script)()
+local function HXJS_fake_script() -- ResetFov.LocalScript 
+	local script = Instance.new('LocalScript', ResetFov)
+
+	local camera = game.Workspace.CurrentCamera
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		camera.FieldOfView = 70
+	end)
+end
+coroutine.wrap(HXJS_fake_script)()
