@@ -30,6 +30,15 @@ local Aimbot = Instance.new("TextButton")
 local _10FOV = Instance.new("TextButton")
 local ResetFov = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
+local Page3 = Instance.new("TextButton")
+local Frame3 = Instance.new("Frame")
+local Page3_2 = Instance.new("TextLabel")
+local Return2 = Instance.new("TextButton")
+local ModShotgun = Instance.new("TextButton")
+local ModAk = Instance.new("TextButton")
+local Modm9 = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local infiniteJump = Instance.new("TextButton")
 
 
 --Properties:
@@ -49,7 +58,7 @@ PrisonLifeTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PrisonLifeTitle.BackgroundTransparency = 1.000
 PrisonLifeTitle.Size = UDim2.new(0, 74, 0, 50)
 PrisonLifeTitle.Font = Enum.Font.GothamBold
-PrisonLifeTitle.Text = "Prison Life 0.3"
+PrisonLifeTitle.Text = "Prison Life 0.4"
 PrisonLifeTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
 PrisonLifeTitle.TextScaled = true
 PrisonLifeTitle.TextSize = 14.000
@@ -393,7 +402,7 @@ ESP.Name = "ESP"
 ESP.Parent = Frame2
 ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ESP.BackgroundTransparency = 1.000
-ESP.Position = UDim2.new(0.724801123, 0, 0.777777791, 0)
+ESP.Position = UDim2.new(0.450607598, 0, 0.777777791, 0)
 ESP.Size = UDim2.new(0, 102, 0, 44)
 ESP.Font = Enum.Font.GothamBold
 ESP.Text = "ESP"
@@ -402,9 +411,127 @@ ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
 
+Page3.Name = "Page3"
+Page3.Parent = Frame2
+Page3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page3.BackgroundTransparency = 1.000
+Page3.BorderSizePixel = 0
+Page3.Position = UDim2.new(0.725806475, 0, 0.812260509, 0)
+Page3.Size = UDim2.new(0, 102, 0, 49)
+Page3.Font = Enum.Font.GothamBold
+Page3.Text = "Page3"
+Page3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Page3.TextScaled = true
+Page3.TextSize = 14.000
+Page3.TextWrapped = true
+
+Frame3.Name = "Frame3"
+Frame3.Parent = ScreenGui
+Frame3.BackgroundColor3 = Color3.fromRGB(147, 167, 255)
+Frame3.BorderSizePixel = 0
+Frame3.Position = UDim2.new(0.103956938, 0, 0.0410000086, 0)
+Frame3.Size = UDim2.new(0, 372, 0, 261)
+Frame3.Visible = false
+
+Page3_2.Name = "Page 3"
+Page3_2.Parent = Frame3
+Page3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page3_2.BackgroundTransparency = 1.000
+Page3_2.Size = UDim2.new(0, 200, 0, 50)
+Page3_2.Font = Enum.Font.GothamBold
+Page3_2.Text = "Page 3"
+Page3_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Page3_2.TextScaled = true
+Page3_2.TextSize = 14.000
+Page3_2.TextWrapped = true
+
+Return2.Name = "Return2"
+Return2.Parent = Frame3
+Return2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Return2.BackgroundTransparency = 1.000
+Return2.BorderSizePixel = 0
+Return2.Position = UDim2.new(0.612903237, 0, 0, 0)
+Return2.Size = UDim2.new(0, 147, 0, 49)
+Return2.Font = Enum.Font.GothamBold
+Return2.Text = "Back"
+Return2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Return2.TextScaled = true
+Return2.TextSize = 14.000
+Return2.TextWrapped = true
+
+ModShotgun.Name = "Mod Shotgun"
+ModShotgun.Parent = Frame3
+ModShotgun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ModShotgun.BackgroundTransparency = 1.000
+ModShotgun.BorderSizePixel = 0
+ModShotgun.Position = UDim2.new(-0.00268816948, 0, 0.237547889, 0)
+ModShotgun.Size = UDim2.new(0, 147, 0, 49)
+ModShotgun.Font = Enum.Font.GothamBold
+ModShotgun.Text = "Mod Shotgun"
+ModShotgun.TextColor3 = Color3.fromRGB(0, 0, 0)
+ModShotgun.TextScaled = true
+ModShotgun.TextSize = 14.000
+ModShotgun.TextWrapped = true
+
+ModAk.Name = "Mod Ak"
+ModAk.Parent = Frame3
+ModAk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ModAk.BackgroundTransparency = 1.000
+ModAk.BorderSizePixel = 0
+ModAk.Position = UDim2.new(-0.00268816948, 0, 0.478927195, 0)
+ModAk.Size = UDim2.new(0, 147, 0, 49)
+ModAk.Font = Enum.Font.GothamBold
+ModAk.Text = "Mod AK"
+ModAk.TextColor3 = Color3.fromRGB(0, 0, 0)
+ModAk.TextScaled = true
+ModAk.TextSize = 14.000
+ModAk.TextWrapped = true
+
+Modm9.Name = "Mod m9"
+Modm9.Parent = Frame3
+Modm9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Modm9.BackgroundTransparency = 1.000
+Modm9.BorderSizePixel = 0
+Modm9.Position = UDim2.new(-0.00268816948, 0, 0.720306516, 0)
+Modm9.Size = UDim2.new(0, 147, 0, 49)
+Modm9.Font = Enum.Font.GothamBold
+Modm9.Text = "Mod m9"
+Modm9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Modm9.TextScaled = true
+Modm9.TextSize = 14.000
+Modm9.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Frame3
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BackgroundTransparency = 1.000
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.760752678, 0, 0.237547889, 0)
+Fly.Size = UDim2.new(0, 89, 0, 49)
+Fly.Font = Enum.Font.GothamBold
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+infiniteJump.Name = "infiniteJump"
+infiniteJump.Parent = Frame3
+infiniteJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infiniteJump.BackgroundTransparency = 1.000
+infiniteJump.BorderSizePixel = 0
+infiniteJump.Position = UDim2.new(0.768817186, 0, 0.45210728, 0)
+infiniteJump.Size = UDim2.new(0, 86, 0, 56)
+infiniteJump.Font = Enum.Font.GothamBold
+infiniteJump.Text = "Infinite Jump"
+infiniteJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infiniteJump.TextScaled = true
+infiniteJump.TextSize = 14.000
+infiniteJump.TextWrapped = true
+
 -- Scripts:
 
-local function EWWBN_fake_script() -- ScreenGui.LocalScript 
+local function ZSLLCM_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -415,8 +542,8 @@ local function EWWBN_fake_script() -- ScreenGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EWWBN_fake_script)()
-local function AKDFRF_fake_script() -- Frame.Dragify 
+coroutine.wrap(ZSLLCM_fake_script)()
+local function QXRCY_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -459,8 +586,8 @@ local function AKDFRF_fake_script() -- Frame.Dragify
 		end
 	end)
 end
-coroutine.wrap(AKDFRF_fake_script)()
-local function GQBV_fake_script() -- x2speed.LocalScript 
+coroutine.wrap(QXRCY_fake_script)()
+local function HSPHAT_fake_script() -- x2speed.LocalScript 
 	local script = Instance.new('LocalScript', x2speed)
 
 	local textButton = script.Parent
@@ -475,8 +602,8 @@ local function GQBV_fake_script() -- x2speed.LocalScript
 		humanoid.WalkSpeed = humanoid.WalkSpeed * 2
 	end)
 end
-coroutine.wrap(GQBV_fake_script)()
-local function MJYVZ_fake_script() -- ResetSpeed.LocalScript 
+coroutine.wrap(HSPHAT_fake_script)()
+local function INXHDPN_fake_script() -- ResetSpeed.LocalScript 
 	local script = Instance.new('LocalScript', ResetSpeed)
 
 	local textButton = script.Parent
@@ -491,8 +618,8 @@ local function MJYVZ_fake_script() -- ResetSpeed.LocalScript
 		humanoid.WalkSpeed = 16
 	end)
 end
-coroutine.wrap(MJYVZ_fake_script)()
-local function CNPHG_fake_script() -- x2jump.LocalScript 
+coroutine.wrap(INXHDPN_fake_script)()
+local function CVHLLD_fake_script() -- x2jump.LocalScript 
 	local script = Instance.new('LocalScript', x2jump)
 
 	local textButton = script.Parent
@@ -507,8 +634,8 @@ local function CNPHG_fake_script() -- x2jump.LocalScript
 		humanoid.JumpPower = humanoid.JumpPower * 2
 	end)
 end
-coroutine.wrap(CNPHG_fake_script)()
-local function OWIT_fake_script() -- ResetJump.LocalScript 
+coroutine.wrap(CVHLLD_fake_script)()
+local function AAHJ_fake_script() -- ResetJump.LocalScript 
 	local script = Instance.new('LocalScript', ResetJump)
 
 	local textButton = script.Parent
@@ -523,8 +650,8 @@ local function OWIT_fake_script() -- ResetJump.LocalScript
 		humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(OWIT_fake_script)()
-local function YFWWGY_fake_script() -- TPtoCrimBase.LocalScript 
+coroutine.wrap(AAHJ_fake_script)()
+local function DCQIZYX_fake_script() -- TPtoCrimBase.LocalScript 
 	local script = Instance.new('LocalScript', TPtoCrimBase)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -537,8 +664,8 @@ local function YFWWGY_fake_script() -- TPtoCrimBase.LocalScript
 	
 	
 end
-coroutine.wrap(YFWWGY_fake_script)()
-local function PVOJ_fake_script() -- TPtoTower.LocalScript 
+coroutine.wrap(DCQIZYX_fake_script)()
+local function WTJCV_fake_script() -- TPtoTower.LocalScript 
 	local script = Instance.new('LocalScript', TPtoTower)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -547,8 +674,8 @@ local function PVOJ_fake_script() -- TPtoTower.LocalScript
 	end)
 	
 end
-coroutine.wrap(PVOJ_fake_script)()
-local function VSDX_fake_script() -- TptoPrison.LocalScript 
+coroutine.wrap(WTJCV_fake_script)()
+local function EGRVMUF_fake_script() -- TptoPrison.LocalScript 
 	local script = Instance.new('LocalScript', TptoPrison)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -559,16 +686,16 @@ local function VSDX_fake_script() -- TptoPrison.LocalScript
 	
 	
 end
-coroutine.wrap(VSDX_fake_script)()
-local function JDYYKN_fake_script() -- Exit.Script 
+coroutine.wrap(EGRVMUF_fake_script)()
+local function OCRLKJ_fake_script() -- Exit.Script 
 	local script = Instance.new('Script', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(JDYYKN_fake_script)()
-local function ADABP_fake_script() -- Guards.LocalScript 
+coroutine.wrap(OCRLKJ_fake_script)()
+local function EALAI_fake_script() -- Guards.LocalScript 
 	local script = Instance.new('LocalScript', Guards)
 
 	
@@ -590,8 +717,8 @@ local function ADABP_fake_script() -- Guards.LocalScript
 	
 	
 end
-coroutine.wrap(ADABP_fake_script)()
-local function LKVFGRE_fake_script() -- Inmates.LocalScript 
+coroutine.wrap(EALAI_fake_script)()
+local function NPUAJS_fake_script() -- Inmates.LocalScript 
 	local script = Instance.new('LocalScript', Inmates)
 
 	
@@ -608,8 +735,8 @@ local function LKVFGRE_fake_script() -- Inmates.LocalScript
 	
 	
 end
-coroutine.wrap(LKVFGRE_fake_script)()
-local function EYGM_fake_script() -- Killaura.LocalScript 
+coroutine.wrap(NPUAJS_fake_script)()
+local function NZPG_fake_script() -- Killaura.LocalScript 
 	local script = Instance.new('LocalScript', Killaura)
 
 	local on = false
@@ -634,8 +761,8 @@ local function EYGM_fake_script() -- Killaura.LocalScript
 	end)
 	
 end
-coroutine.wrap(EYGM_fake_script)()
-local function MCZEKP_fake_script() -- TPtoArmory.LocalScript 
+coroutine.wrap(NZPG_fake_script)()
+local function YKGUD_fake_script() -- TPtoArmory.LocalScript 
 	local script = Instance.new('LocalScript', TPtoArmory)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -646,8 +773,8 @@ local function MCZEKP_fake_script() -- TPtoArmory.LocalScript
 	
 	
 end
-coroutine.wrap(MCZEKP_fake_script)()
-local function EJDRB_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(YKGUD_fake_script)()
+local function XVQFZGV_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local Noclip = nil
@@ -686,8 +813,8 @@ local function EJDRB_fake_script() -- Noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EJDRB_fake_script)()
-local function DOUTFI_fake_script() -- Refresh.LocalScript 
+coroutine.wrap(XVQFZGV_fake_script)()
+local function CKMSXU_fake_script() -- Refresh.LocalScript 
 	local script = Instance.new('LocalScript', Refresh)
 
 	local Players = game:GetService("Players")
@@ -721,8 +848,8 @@ local function DOUTFI_fake_script() -- Refresh.LocalScript
 	script.Parent.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(DOUTFI_fake_script)()
-local function LOQLAQZ_fake_script() -- p2.Script 
+coroutine.wrap(CKMSXU_fake_script)()
+local function NZRMZ_fake_script() -- p2.Script 
 	local script = Instance.new('Script', p2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -732,8 +859,8 @@ local function LOQLAQZ_fake_script() -- p2.Script
 		end)
 	
 end
-coroutine.wrap(LOQLAQZ_fake_script)()
-local function CSQHQ_fake_script() -- Return.Script 
+coroutine.wrap(NZRMZ_fake_script)()
+local function OWTQXDR_fake_script() -- Return.Script 
 	local script = Instance.new('Script', Return)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -743,8 +870,8 @@ local function CSQHQ_fake_script() -- Return.Script
 	end)
 	
 end
-coroutine.wrap(CSQHQ_fake_script)()
-local function MPWW_fake_script() -- Remington870.LocalScript 
+coroutine.wrap(OWTQXDR_fake_script)()
+local function SZTOMQL_fake_script() -- Remington870.LocalScript 
 	local script = Instance.new('LocalScript', Remington870)
 
 	
@@ -771,9 +898,149 @@ local function MPWW_fake_script() -- Remington870.LocalScript
 	
 	
 end
-coroutine.wrap(MPWW_fake_script)()
-local function JTZQC_fake_script() -- AK47.LocalScript 
+coroutine.wrap(SZTOMQL_fake_script)()
+local function TJVWHV_fake_script() -- AK47.LocalScript 
 	local script = Instance.new('LocalScript', AK47)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local model = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Teleport player to model
+		character.HumanoidRootPart.CFrame = model.CFrame
+	
+		-- Script generated by SimpleSpy - credits to exx#9394
+		wait(0.5)
+		local args = {
+			[1] = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+		}
+	
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+end
+coroutine.wrap(TJVWHV_fake_script)()
+local function XFPTMSH_fake_script() -- m9.LocalScript 
+	local script = Instance.new('LocalScript', m9)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local model = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Teleport player to model
+		character.HumanoidRootPart.CFrame = model.CFrame
+	
+		wait(0.3)
+		local args = {
+			[1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+		}
+	
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end
+coroutine.wrap(XFPTMSH_fake_script)()
+local function QDLUNI_fake_script() -- AllWeaponGetter.LocalScript 
+	local script = Instance.new('LocalScript', AllWeaponGetter)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local giver = workspace.Prison_ITEMS.giver
+		local originalCFrame = character.HumanoidRootPart.CFrame
+	
+		-- Pick up M9
+		local model = giver.M9.ITEMPICKUP
+		character.HumanoidRootPart.CFrame = model.CFrame
+		wait(0.3)
+		local args = {
+			[1] = giver.M9.ITEMPICKUP
+		}
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Pick up AK-47
+		model = giver:FindFirstChild("AK-47").ITEMPICKUP
+		character.HumanoidRootPart.CFrame = model.CFrame
+		wait(0.3)
+		args = {
+			[1] = giver:FindFirstChild("AK-47").ITEMPICKUP
+		}
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Pick up Remington 870
+		model = giver:FindFirstChild("Remington 870").ITEMPICKUP
+		character.HumanoidRootPart.CFrame = model.CFrame
+		wait(0.3)
+		args = {
+			[1] = giver:FindFirstChild("Remington 870").ITEMPICKUP
+		}
+		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		-- Teleport player back to original position
+		character.HumanoidRootPart.CFrame = originalCFrame
+	end)
+	
+	
+end
+coroutine.wrap(QDLUNI_fake_script)()
+local function RVJYX_fake_script() -- Frame2.Dragify 
+	local script = Instance.new('LocalScript', Frame2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(RVJYX_fake_script)()
+local function YZOWMSA_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
 
 	local UserInputService = game:GetService("UserInputService")
 	local aimassist = false -- Initialize aim assist to be off
@@ -844,201 +1111,8 @@ local function JTZQC_fake_script() -- AK47.LocalScript
 	end)
 	
 end
-coroutine.wrap(JTZQC_fake_script)()
-local function VBMDKA_fake_script() -- m9.LocalScript 
-	local script = Instance.new('LocalScript', m9)
-
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local player = game.Players.LocalPlayer
-		local character = player.Character or player.CharacterAdded:Wait()
-		local model = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
-		local originalCFrame = character.HumanoidRootPart.CFrame
-	
-		-- Teleport player to model
-		character.HumanoidRootPart.CFrame = model.CFrame
-	
-		wait(0.3)
-		local args = {
-			[1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
-		}
-	
-		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-	
-		-- Teleport player back to original position
-		character.HumanoidRootPart.CFrame = originalCFrame
-	end)
-	
-	
-end
-coroutine.wrap(VBMDKA_fake_script)()
-local function LTJF_fake_script() -- AllWeaponGetter.LocalScript 
-	local script = Instance.new('LocalScript', AllWeaponGetter)
-
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local player = game.Players.LocalPlayer
-		local character = player.Character or player.CharacterAdded:Wait()
-		local giver = workspace.Prison_ITEMS.giver
-		local originalCFrame = character.HumanoidRootPart.CFrame
-	
-		-- Pick up M9
-		local model = giver.M9.ITEMPICKUP
-		character.HumanoidRootPart.CFrame = model.CFrame
-		wait(0.3)
-		local args = {
-			[1] = giver.M9.ITEMPICKUP
-		}
-		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-	
-		-- Pick up AK-47
-		model = giver:FindFirstChild("AK-47").ITEMPICKUP
-		character.HumanoidRootPart.CFrame = model.CFrame
-		wait(0.3)
-		args = {
-			[1] = giver:FindFirstChild("AK-47").ITEMPICKUP
-		}
-		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-	
-		-- Pick up Remington 870
-		model = giver:FindFirstChild("Remington 870").ITEMPICKUP
-		character.HumanoidRootPart.CFrame = model.CFrame
-		wait(0.3)
-		args = {
-			[1] = giver:FindFirstChild("Remington 870").ITEMPICKUP
-		}
-		workspace.Remote.ItemHandler:InvokeServer(unpack(args))
-	
-		-- Teleport player back to original position
-		character.HumanoidRootPart.CFrame = originalCFrame
-	end)
-	
-	
-end
-coroutine.wrap(LTJF_fake_script)()
-local function MNFE_fake_script() -- Frame2.Dragify 
-	local script = Instance.new('LocalScript', Frame2)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(MNFE_fake_script)()
-local function FNIONEY_fake_script() -- Aimbot.LocalScript 
-	local script = Instance.new('LocalScript', Aimbot)
-
-	local UserInputService = game:GetService("UserInputService")
-	local toggle = false
-	
-	-- Function to toggle the script on and off
-	local function toggleScript()
-		toggle = not toggle
-		if toggle then
-			-- Code to run when the script is toggled on
-			aimassist = true
-		else
-			-- Code to run when the script is toggled off
-			aimassist = false
-		end
-	end
-	
-	-- Connect the button click event to the toggle function
-	script.Parent.MouseButton1Click:Connect(toggleScript)
-	
-	-- Connect the keybind event to the toggle function
-	UserInputService.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.X then
-			toggleScript()
-		end
-	end)
-	
-	
-	teambased = true
-	
-	aim = 1
-	lock = 0
-	
-	e = Instance.new("SelectionBox")
-	e.Color3 = Color3.new(1, 0, 0)
-	e.Parent = game.Workspace
-	mouse = game.Players.LocalPlayer:GetMouse()
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if lock == 0 then
-			if (120 - (mouse.Hit.Position - game.Workspace.CurrentCamera.CFrame.Position).Magnitude / 5)>116 then
-			else 
-			end
-		end
-	
-		if mouse.Target.Parent:FindFirstChild("Humanoid") then
-			if game.Players:FindFirstChild(mouse.Target.Parent.Name) then
-				if game.Players:FindFirstChild(mouse.Target.Parent.Name).TeamColor == game.Players.LocalPlayer.TeamColor then
-					if teambased == false then
-						e.Adornee = mouse.Target
-						if aimassist == true then
-							lock = 1
-	
-							game.Workspace.CurrentCamera.CFrame = game.Workspace.CurrentCamera.CFrame:Lerp(CFrame.new(game.Workspace.CurrentCamera.CFrame.Position, mouse.Target.Parent:FindFirstChild("Head").Position), 0.94)
-						end
-					end
-				else
-					e.Adornee = mouse.Target
-					if aimassist == true then
-						lock = 1
-	
-						game.Workspace.CurrentCamera.CFrame = game.Workspace.CurrentCamera.CFrame:Lerp(CFrame.new(game.Workspace.CurrentCamera.CFrame.Position, mouse.Target.Parent:FindFirstChild("Head").Position), 0.94)
-					end
-				end
-			end
-	
-		else 
-			lock = 0
-			e.Adornee = nil
-			e.Adornee = nil
-	
-	
-	
-		end
-	
-	end)
-end
-coroutine.wrap(FNIONEY_fake_script)()
-local function XRMMCM_fake_script() -- _10FOV.LocalScript 
+coroutine.wrap(YZOWMSA_fake_script)()
+local function WJKB_fake_script() -- _10FOV.LocalScript 
 	local script = Instance.new('LocalScript', _10FOV)
 
 	local camera = game.Workspace.CurrentCamera
@@ -1049,8 +1123,8 @@ local function XRMMCM_fake_script() -- _10FOV.LocalScript
 		camera.FieldOfView = math.min(camera.FieldOfView + 10, maxFov)
 	end)
 end
-coroutine.wrap(XRMMCM_fake_script)()
-local function FEYUY_fake_script() -- ResetFov.LocalScript 
+coroutine.wrap(WJKB_fake_script)()
+local function IKYWBJ_fake_script() -- ResetFov.LocalScript 
 	local script = Instance.new('LocalScript', ResetFov)
 
 	local camera = game.Workspace.CurrentCamera
@@ -1061,8 +1135,8 @@ local function FEYUY_fake_script() -- ResetFov.LocalScript
 		camera.FieldOfView = 70
 	end)
 end
-coroutine.wrap(FEYUY_fake_script)()
-local function LDKLQTV_fake_script() -- ESP.LocalScript 
+coroutine.wrap(IKYWBJ_fake_script)()
+local function AWFNS_fake_script() -- ESP.LocalScript 
 	local script = Instance.new('LocalScript', ESP)
 
 	local Players = game:GetService("Players")
@@ -1113,4 +1187,267 @@ local function LDKLQTV_fake_script() -- ESP.LocalScript
 	script.Parent.MouseButton1Click:Connect(toggleESP)
 	
 end
-coroutine.wrap(LDKLQTV_fake_script)()
+coroutine.wrap(AWFNS_fake_script)()
+local function BMQFH_fake_script() -- Page3.Script 
+	local script = Instance.new('Script', Page3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame2.Visible = false
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame3.Visible = true
+		print("button worked")
+	end)
+	
+end
+coroutine.wrap(BMQFH_fake_script)()
+local function VITZC_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local frame = script.Parent:FindFirstChild("Frame")
+	local frame2 = script.Parent:FindFirstChild("Frame2")
+	local frame3 = script.Parent:FindFirstChild("Frame3")
+	
+	-- Connect the Changed event of the Frame object to a function
+	frame.Changed:Connect(function(property)
+		if property == "Position" then
+			-- Update the Position of the Frame2 and Frame3 objects
+			frame2.Position = frame.Position
+			frame3.Position = frame.Position
+		end
+	end)
+end
+coroutine.wrap(VITZC_fake_script)()
+local function FTOYSP_fake_script() -- Return2.Script 
+	local script = Instance.new('Script', Return2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame2.Visible = true
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame3.Visible = false
+		print("button worked")
+	end)
+	
+end
+coroutine.wrap(FTOYSP_fake_script)()
+local function HBMD_fake_script() -- Frame3.Dragify 
+	local script = Instance.new('LocalScript', Frame3)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(HBMD_fake_script)()
+local function ECZVZYH_fake_script() -- ModShotgun.Script 
+	local script = Instance.new('Script', ModShotgun)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		local Character = game.Players.LocalPlayer.Character
+		while not Character do
+			wait()
+			Character = game.Players.LocalPlayer.Character
+		end
+	
+		local Player = game.Players.LocalPlayer
+		local Tool = Player.Character:FindFirstChildOfClass("Tool")
+		local cc = require(Tool.GunStates)
+	
+		cc["CurrentAmmo"] = math.huge
+		cc["AutoFire"] = false
+		cc["FireRate"] = 0.8
+		cc["Range"] = math.huge
+		cc["MaxAmmo"] = math.huge
+	end)
+end
+coroutine.wrap(ECZVZYH_fake_script)()
+local function MSVLS_fake_script() -- ModAk.Script 
+	local script = Instance.new('Script', ModAk)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		local Character = game.Players.LocalPlayer.Character
+		while not Character do
+			wait()
+			Character = game.Players.LocalPlayer.Character
+		end
+	
+		local Player = game.Players.LocalPlayer
+		local Tool = Player.Character:FindFirstChildOfClass("Tool")
+		local cc = require(Tool.GunStates)
+	
+		cc["CurrentAmmo"] = math.huge
+		cc["AutoFire"] = true
+		cc["FireRate"] = 0.05
+		cc["MaxAmmo"] = math.huge
+	end)
+end
+coroutine.wrap(MSVLS_fake_script)()
+local function WHMJN_fake_script() -- Modm9.Script 
+	local script = Instance.new('Script', Modm9)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		local Character = game.Players.LocalPlayer.Character
+		while not Character do
+			wait()
+			Character = game.Players.LocalPlayer.Character
+		end
+	
+		local Player = game.Players.LocalPlayer
+		local Tool = Player.Character:FindFirstChildOfClass("Tool")
+		local cc = require(Tool.GunStates)
+	
+		cc["CurrentAmmo"] = math.huge
+		cc["AutoFire"] = true
+		cc["FireRate"] = 0.01
+		cc["Range"] = math.huge
+		cc["MaxAmmo"] = math.huge
+	end)
+end
+coroutine.wrap(WHMJN_fake_script)()
+local function ECKEB_fake_script() -- Fly.Script 
+	local script = Instance.new('Script', Fly)
+
+	repeat wait()
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer
+	local torso = plr.Character.Torso
+	local flying = true
+	local deb = true
+	local ctrl = {f = 0, b = 0, l = 0, r = 0}
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	local maxspeed = 50
+	local speed = 0
+	
+	function Fly()
+		local bg = Instance.new("BodyGyro", torso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = torso.CFrame
+		local bv = Instance.new("BodyVelocity", torso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		repeat wait()
+			plr.Character.Humanoid.PlatformStand = true
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0.1,0)
+			end
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		until not flying
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+		plr.Character.Humanoid.PlatformStand = false
+	end
+	mouse.KeyDown:connect(function(key)
+		if key:lower() == "v" then
+			if flying then flying = false
+			else
+				flying = true
+				Fly()
+			end
+		elseif key:lower() == "w" then
+			ctrl.f = 1
+		elseif key:lower() == "s" then
+			ctrl.b = -1
+		elseif key:lower() == "a" then
+			ctrl.l = -1
+		elseif key:lower() == "d" then
+			ctrl.r = 1
+		end
+	end)
+	mouse.KeyUp:connect(function(key)
+		if key:lower() == "w" then
+			ctrl.f = 0
+		elseif key:lower() == "s" then
+			ctrl.b = 0
+		elseif key:lower() == "a" then
+			ctrl.l = 0
+		elseif key:lower() == "d" then
+			ctrl.r = 0
+		end
+	end)
+	Fly()
+	
+end
+coroutine.wrap(ECKEB_fake_script)()
+local function HQBB_fake_script() -- infiniteJump.Script 
+	local script = Instance.new('Script', infiniteJump)
+
+	local player = game.Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local jumpAmount = 50
+	local infiniteJumpEnabled = false
+	
+	-- Connect the button's MouseButton1Click event to toggle the infinite jump feature
+	script.Parent.MouseButton1Click:connect(function()
+		infiniteJumpEnabled = not infiniteJumpEnabled
+	end)
+	
+	UIS.InputBegan:connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Space and infiniteJumpEnabled then
+			local character = player.Character
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			local torso = character:FindFirstChild("Torso") or character:FindFirstChild("HumanoidRootPart")
+			if torso and humanoid then
+				-- Teleport the character upwards
+				torso.CFrame = torso.CFrame + Vector3.new(0, jumpAmount, 0)
+	
+				-- Play the default Jump animation
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			end
+		end
+	end)
+end
+coroutine.wrap(HQBB_fake_script)()
